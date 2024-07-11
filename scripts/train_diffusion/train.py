@@ -16,8 +16,9 @@ os.environ["HDF5_USE_FILE_LOCKING"] = "FALSE"
 def experiment(
     ########################################################################
     # Dataset
-    dataset_subdir: str = 'EnvSimple2D-RobotPointMass',
+    # dataset_subdir: str = 'EnvSimple2D-RobotPointMass',
     # dataset_subdir: str = 'EnvSpheres3D-RobotPanda',
+    dataset_subdir: str = 'EnvTableShelf-RobotPanda',
     include_velocity: bool = True,
 
     ########################################################################
