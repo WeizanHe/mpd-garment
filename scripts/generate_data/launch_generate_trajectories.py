@@ -14,7 +14,9 @@ from experiment_launcher.utils import is_local
 # env_id, robot_id, num_contexts, num_trajectories_per_context, threshold_start_goal_pos, obstacle_cutoff_margin = 'EnvNarrowPassageDense2D', 'RobotPointMass', 500, 20, 1, 0.02
 # env_id, robot_id, num_contexts, num_trajectories_per_context, threshold_start_goal_pos, obstacle_cutoff_margin = 'EnvDense2D', 'RobotPointMass', 500, 20, 1, 0.02
 # env_id, robot_id, num_contexts, num_trajectories_per_context, threshold_start_goal_pos, obstacle_cutoff_margin = 'EnvSpheres3D', 'RobotPanda', 500, 20, 1.83, 0.05  # 1.83 = 7 * np.deg2rad(15)
-env_id, robot_id, num_contexts, num_trajectories_per_context, threshold_start_goal_pos, obstacle_cutoff_margin = 'EnvTableShelf', 'RobotPanda', 500, 20, 1.83, 0.05
+# env_id, robot_id, num_contexts, num_trajectories_per_context, threshold_start_goal_pos, obstacle_cutoff_margin = 'EnvTableShelf', 'RobotPanda', 500, 20, 1.83, 0.05
+# env_id, robot_id, num_contexts, num_trajectories_per_context, threshold_start_goal_pos, obstacle_cutoff_margin = 'EnvIroningBase', 'RobotDenso', 500, 20, 1.83, 0.05
+env_id, robot_id, num_contexts, num_trajectories_per_context, threshold_start_goal_pos, obstacle_cutoff_margin = 'EnvSpheres3D', 'RobotDenso', 500, 20, 1.83, 0.05
 
 ########################################################################################################################
 # LAUNCHER

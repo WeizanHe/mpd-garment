@@ -174,10 +174,12 @@ def experiment(
     # env_id: str = 'EnvDense2D',
     # env_id: str = 'EnvSimple2D',
     # env_id: str = 'EnvNarrowPassageDense2D',
-    env_id: str = 'EnvSpheres3D',
+    # env_id: str = 'EnvSpheres3D',
+    env_id: str = 'EnvIroningBase',
 
     # robot_id: str = 'RobotPointMass',
-    robot_id: str = 'RobotPanda',
+    # robot_id: str = 'RobotPanda',
+    robot_id: str = 'RobotDenso',
 
     n_support_points: int = 64,
     duration: float = 5.0,  # seconds

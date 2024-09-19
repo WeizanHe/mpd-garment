@@ -17,7 +17,7 @@ from mpd.models.diffusion_models.guides import GuideManagerTrajectoriesWithVeloc
 from mpd.models.diffusion_models.sample_functions import guide_gradient_steps, ddpm_sample_fn
 from mpd.trainer import get_dataset, get_model
 from mpd.utils.loading import load_params_from_yaml
-from torch_robotics.robots import RobotPanda
+from torch_robotics.robots import RobotPanda, RobotDenso
 from torch_robotics.torch_utils.seed import fix_random_seed
 from torch_robotics.torch_utils.torch_timer import TimerCUDA
 from torch_robotics.torch_utils.torch_utils import get_torch_device, freeze_torch_model_params
@@ -39,6 +39,7 @@ def experiment(
     # model_id: str = 'EnvNarrowPassageDense2D-RobotPointMass',
     # model_id: str = 'EnvSimple2D-RobotPointMass',
     model_id: str = 'EnvSpheres3D-RobotPanda',
+    # model_id: str = 'EnvIroningBase-RobotDenso',
 
     # planner_alg: str = 'diffusion_prior',
     # planner_alg: str = 'diffusion_prior_then_guide',
@@ -373,7 +374,7 @@ def experiment(
             anim_time=5
         )
 
-        if isinstance(robot, RobotPanda):
+        if isinstance(robot, RobotPanda): # From RobotPanda to RobotDenso
             # visualize in Isaac Gym
             # POSITION CONTROL
             # add initial positions for better visualization
